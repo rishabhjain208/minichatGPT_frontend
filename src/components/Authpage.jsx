@@ -35,8 +35,8 @@ const Authpage = ({ isLogin, setAuthToken, setEmail }) => {
     }
     try {
       const url = isLogin
-        ? "http://localhost:4000/api/auth/login"
-        : "http://localhost:4000/api/auth/register";
+        ? "https://minichatgpt-backend.onrender.com/api/auth/login"
+        : "https://minichatgpt-backend.onrender.com/api/auth/register";
       const response = await axios.post(url, { email, password });
 
       if (response.data.success) {
