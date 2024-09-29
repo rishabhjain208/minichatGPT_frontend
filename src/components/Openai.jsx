@@ -20,7 +20,7 @@ const Openai = () => {
       const fetchUserId = async () => {
         try {
           const response = await axios.get(
-            "https://open-ai-backend-0kof.onrender.com/api/users/me",
+            "https://minichatgpt-backend.onrender.com/api/users/me",
             {
               headers: { Authorization: `Bearer ${token}` },
             }
