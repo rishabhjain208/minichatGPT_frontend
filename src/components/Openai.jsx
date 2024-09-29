@@ -51,7 +51,7 @@ const Openai = () => {
       const token = localStorage.getItem("authToken");
 
       const response = await axios.post(
-        "http://localhost:4000/api/questions/",
+        "https://minichatgpt-backend.onrender.com/api/questions/",
         { question: input },
         {
           headers: {
@@ -82,7 +82,7 @@ const Openai = () => {
     try {
       const token = localStorage.getItem("authToken");
       const response = await axios.get(
-        `http://localhost:4000/api/questions/${questionId}`,
+        `https://minichatgpt-backend.onrender.com/api/questions/${questionId}`,
         {
           headers: { Authorization: `Bearer ${token}` },
         }
