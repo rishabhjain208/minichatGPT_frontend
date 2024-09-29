@@ -20,7 +20,7 @@ const App = () => {
       if (authToken) {
         try {
           const response = await axios.get(
-            `https://open-ai-backend-0kof.onrender.com/api/auth/loginusername/${authToken}`,
+            `https://minichatgpt-backend.onrender.com/api/auth/loginusername/${authToken}`,
             {
               headers: {
                 Authorization: `Bearer ${authToken}`,
