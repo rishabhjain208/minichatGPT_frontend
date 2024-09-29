@@ -9,7 +9,7 @@ const SideQuestion = ({ userId, onQuestionSelect }) => {
       try {
         const token = localStorage.getItem("authToken");
         const response = await axios.get(
-          `http://localhost:4000/api/users/${userId}/questions`,
+          `https://minichatgpt-backend.onrender.com/api/users/${userId}/questions`,
           {
             headers: { Authorization: `Bearer ${token}` },
           }
