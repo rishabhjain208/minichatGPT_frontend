@@ -32,7 +32,7 @@ const Navbar = ({ authToken, setAuthToken, email, setEmail }) => {
           {email ? (
             <div className="relative">
               <div
-                className="w-12 h-12 bg-slate-300 rounded-full flex justify-center items-center cursor-pointer"
+                className="w-12 h-12 bg-slate-300 rounded-full flex justify-center items-center cursor-pointer mr-5"
                 onClick={() => setShowDropdown(!showDropdown)}
               >
                 <span className="text-2xl text-white text-center">
